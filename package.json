@@ -18,7 +18,7 @@
     "compile": "tsc",
     "start": "node fuse.js",
     "sketch": "node fuse.js",
-    "dist": "node fuse.js dist",
+    "dist": "node fuse.js default",
     "dist-os": "node fuse.js dist-open-processing"
   },
   "main": "index.js"
