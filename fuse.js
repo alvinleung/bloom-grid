@@ -63,7 +63,8 @@ task("default", ["clean"], async (context) => {
 task("dist", ["clean"], async (context) => {
   context.isProduction = true;
   const fuse = context.getConfig();
-  context.createBundle(fuse, "> [sketch.ts]");
+  context.createBundle(fuse, "> sketch.ts +p5");
+  // context.createBundle(fuse, "> [sketch.ts] +p5");
   await fuse.run();
 });
 
